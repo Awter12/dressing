@@ -1,0 +1,4 @@
+[
+  {"name":"theme_info","theme_name":"Agronomy Workshop","theme_version":"1.0.0","theme_author":"Agronomy Workshop","theme_documentation_url":"https://help.shopify.com/en/manual/online-store/themes","theme_support_url":"https://help.shopify.com/"},
+  {"name":"Brand","settings":[{"type":"image_picker","id":"logo","label":"Logo"},{"type":"text","id":"brand_name","label":"Brand name","default":"AGRONOMY WORKSHOP"},{"type":"color","id":"color_background","label":"Background","default":"#f8f7f3"},{"type":"color","id":"color_text","label":"Text","default":"#20211e"},{"type":"color","id":"color_accent","label":"Accent","default":"#59745b"},{"type":"range","id":"page_width","label":"Page width","min":1000,"max":1600,"step":40,"unit":"px","default":1320}]}
+]

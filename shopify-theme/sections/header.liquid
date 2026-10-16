@@ -1,0 +1,9 @@
+<header class="site-header">
+  {% if section.settings.announcement != blank %}<div class="announcement">{{ section.settings.announcement | escape }}</div>{% endif %}
+  <div class="header-inner page-width">
+    <a class="brand" href="{{ routes.root_url }}" aria-label="{{ shop.name }} home">{% if settings.logo != blank %}{{ settings.logo | image_url: width: 440 | image_tag: class: 'brand-logo', alt: shop.name }}{% else %}{{ settings.brand_name | default: shop.name | escape }}{% endif %}</a>
+    <nav class="main-nav" aria-label="Main navigation">{% for link in section.settings.menu.links %}<a href="{{ link.url }}">{{ link.title | escape }}</a>{% endfor %}</nav>
+    <div class="header-actions"><a href="{{ routes.search_url }}">Search</a><a href="{{ routes.cart_url }}">Bag <span class="cart-count">{{ cart.item_count }}</span></a></div>
+  </div>
+</header>
+{% schema %}{"name":"Header","settings":[{"type":"text","id":"announcement","label":"Announcement","default":"Design led, functional golf apparel. Made for the long game."},{"type":"link_list","id":"menu","label":"Menu","default":"main-menu"}],"presets":[{"name":"Header"}]}{% endschema %}
